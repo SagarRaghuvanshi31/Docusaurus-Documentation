@@ -116,7 +116,7 @@ git push origin main
 3. Select **"Gitea"**.
 4. In the **Target URL**, enter:
    ```
-   http://your-server-ip:3002/webhook
+   http://192.168.1.227:3002/webhook
    ```
 5. Select **Trigger on push events**.
 6. Click **Add Webhook**.
