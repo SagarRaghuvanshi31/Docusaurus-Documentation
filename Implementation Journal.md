@@ -143,12 +143,12 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-REPO_PATH = "/home/youruser/my-task"  # Change this to the correct path
+REPO_PATH = "/home/sagar/my-task"  # Change this to the correct path
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
     try:
-        subprocess.run(['git', '-C', REPO_PATH, 'pull', 'origin', 'main'], check=True)
+        subprocess.run(['git', '-C', /home/sagar/my-task, 'pull', 'origin', 'main'], check=True)
         return "Updated Successfully", 200
     except subprocess.CalledProcessError as e:
         return f" Error: {str(e)}", 500
