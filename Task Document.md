@@ -14,6 +14,7 @@ This creates a Docusaurus project inside the `my-task` folder.
 ## 2. Set Up Gitea & Push Code to Gitea Repository
 
 ### Step 1: Install Gitea
+
 If you haven't installed Gitea, install it using:
 
 ```sh
@@ -30,6 +31,7 @@ sudo systemctl enable --now gitea
 Now, open your browser and go to [http://localhost:3001](http://localhost:3001) to complete the Gitea setup.
 
 ### Step 2: Create a Repository in Gitea
+
 1. Log in to Gitea.
 2. Click on **"New Repository"**.
 3. Set the repository name as `my-task`.
@@ -48,6 +50,7 @@ git push -u origin main
 ```
 
 ## 3. Update Docusaurus Configuration
+
 Modify the `docusaurus.config.js` file inside the `my-task` folder:
 
 ```js
@@ -111,6 +114,7 @@ git push origin main
 ## 4. Set Up Gitea Webhook for Auto Deployment
 
 ### Step 1: Create a Webhook in Gitea
+
 1. Go to [http://localhost:3001/Sagar31/my-task](http://localhost:3001/Sagar31/my-task).
 2. Click on **Settings → Webhooks → Add Webhook**.
 3. Select **"Gitea"**.
@@ -122,6 +126,7 @@ git push origin main
 6. Click **Add Webhook**.
 
 ### Step 2: Set Up Webhook Server
+
 Install Flask:
 
 ```sh
@@ -166,6 +171,7 @@ python3 webhook_server.py &
 Now, every time you push to Gitea, the webhook will trigger an automatic update.
 
 ## 5. Enable Gitea Pages for Deployment
+
 1. Go to **Gitea Repository → Settings → Pages**.
 2. Select the **gh-pages** branch under **"Source"**.
 3. Click **Save**.
