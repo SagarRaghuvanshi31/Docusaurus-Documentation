@@ -1,5 +1,40 @@
 # Docusaurus Setup and Deployment with Gitea Webhook
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Key Steps Covered](#key-steps-covered)
+- [1. Install & Set Up Docusaurus Locally](#1-install--set-up-docusaurus-locally)
+- [2. Set Up Gitea & Push Code to Gitea Repository](#2-set-up-gitea--push-code-to-gitea-repository)
+  - [Step 1: Install Gitea](#step-1-install-gitea)
+  - [Step 2: Create a Repository in Gitea](#step-2-create-a-repository-in-gitea)
+  - [Step 3: Initialize Git and Push Code](#step-3-initialize-git-and-push-code)
+- [3. Update Docusaurus Configuration](#3-update-docusaurus-configuration)
+- [4. Set Up Gitea Webhook for Auto Deployment](#4-set-up-gitea-webhook-for-auto-deployment)
+  - [Step 1: Create a Webhook in Gitea](#step-1-create-a-webhook-in-gitea)
+  - [Step 2: Set Up Webhook Server](#step-2-set-up-webhook-server)
+- [5. Enable Gitea Pages for Deployment](#5-enable-gitea-pages-for-deployment)
+- [6. Containerizing Docusaurus with Podman](#6-containerizing-docusaurus-with-podman)
+  - [Step 1: Create a Dockerfile](#step-1-create-a-dockerfile)
+  - [Step 2: Build the Podman Image](#step-2-build-the-podman-image)
+  - [Step 3: Run the Container](#step-3-run-the-container)
+  - [Step 4: Push Image to Docker Hub](#step-4-push-image-to-docker-hub)
+  - [Step 5: Pull Image](#step-5-pull-image)
+
+---
+
+# Overview
+
+This guide covers the complete setup and deployment of a **Docusaurus** documentation website with **Gitea** for version control and **webhooks** for automated deployment. It also includes **containerization** using **Podman** to run the website in a lightweight, isolated environment.
+
+## Key Steps Covered
+
+- **Docusaurus Setup**: Initializing a new Docusaurus project, installing dependencies, and configuring the site.
+- **Gitea Integration**: Installing Gitea, creating a repository, and pushing Docusaurus code.
+- **Automated Deployment**: Setting up a webhook server to trigger updates when changes are pushed to Gitea.
+- **Gitea Pages for Hosting**: Enabling Gitea’s built-in static site hosting for Docusaurus.
+- **Containerization with Podman**: Building and running the Docusaurus site inside a container and pushing it to a container registry for easy deployment.
+
 ## 1. Install & Set Up Docusaurus Locally
 Run the following commands to create a new Docusaurus project:
 
