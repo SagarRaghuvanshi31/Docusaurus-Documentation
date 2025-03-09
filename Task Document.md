@@ -35,6 +35,38 @@ This guide covers the complete setup and deployment of a **Docusaurus** document
 - **Gitea Pages for Hosting**: Enabling Gitea’s built-in static site hosting for Docusaurus.
 - **Containerization with Podman**: Building and running the Docusaurus site inside a container and pushing it to a container registry for easy deployment.
 
+## Prerequisites  
+
+Before you begin, ensure you have the following installed and configured on your system:
+
+### 1. System Requirements  
+- A Linux-based operating system (Ubuntu, Fedora, or any other distribution)  
+- A user account with sudo privileges  
+
+### 2. Required Software  
+
+| **Software** | **Version** | **Installation Command** |
+|-------------|------------|--------------------------|
+| Node.js & npm | 18+ | `sudo apt install nodejs npm -y` |
+| Git | Latest | `sudo apt install git -y` |
+| Gitea | Latest | `sudo apt install gitea -y` |
+| Python3 & Flask | Latest | `sudo apt install python3 python3-flask -y` |
+| Podman | Latest | `sudo apt install podman -y` |
+
+### 3. Network & Access Requirements  
+- Ensure ports **3000** (Docusaurus), **3001** (Gitea), and **3002** (Webhook Server) are open and accessible.  
+- If using a remote server, ensure firewall rules allow external access to these ports.  
+
+# Docusaurus
+
+Docusaurus is an open-source framework for building high-quality, versioned documentation websites quickly and efficiently. Developed by Facebook, it allows users to create and manage documentation with **Markdown**, making it an ideal choice for:
+
+- **Technical projects**  
+- **Open-source initiatives**  
+- **Internal documentation**  
+
+Docusaurus provides features like **custom themes**, **plugin support**, and **search functionality**, making it a powerful tool for creating structured and easy-to-maintain documentation websites.
+
 ## 1. Install & Set Up Docusaurus Locally
 Run the following commands to create a new Docusaurus project:
 
