@@ -40,7 +40,7 @@ This guide covers the complete setup and deployment of a **Docusaurus** document
 Before you begin, ensure you have the following installed and configured on your system:
 
 ### 1. System Requirements  
-- A Linux-based operating system (Ubuntu, Fedora, or any other distribution)  
+- A Linux-based operating system 
 - A user account with sudo privileges  
 
 ### 2. Required Software  
