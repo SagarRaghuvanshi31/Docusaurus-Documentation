@@ -215,7 +215,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-REPO_PATH = "/home/sagar/my-task"  # Change this to the correct path
+REPO_PATH = "/home/sagar/my-task"  
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
